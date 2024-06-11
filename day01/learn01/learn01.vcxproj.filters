@@ -18,5 +18,32 @@
     <ClCompile Include="hello_server.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="hello_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="low_open.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="low_read.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fd_seri.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="mainTest.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="endian_conv.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="inet_addr.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="inet_aton.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
