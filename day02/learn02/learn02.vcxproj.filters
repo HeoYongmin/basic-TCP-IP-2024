@@ -14,4 +14,33 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="inet_ntoa.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_server.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_server.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_client2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="op_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="op_server.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="uecho_server.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="uecho_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
