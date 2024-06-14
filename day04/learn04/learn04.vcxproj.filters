@@ -14,4 +14,24 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wait.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="waitpid.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="signal.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="remove_zombie.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_mpserv.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_mpclient.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
