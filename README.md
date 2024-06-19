@@ -328,7 +328,7 @@ TCP/IP 소켓 프로그래밍
     - webpage 배열을 전송하는 웹서버를 구현
     - 클라이언트 인터넷 브라우저로 서버 접속 -> HTTP request 형식의 메세지로 서버에 전달 -> GET/POST 요청 방식에 따른 서버 동작
 
-    <img src= width="730">
+    <img src="https://raw.githubusercontent.com/HeoYongmin/basic-TCP-IP-2024/main/day07/miniproject/webserver.png" width="730">
 
 
 
