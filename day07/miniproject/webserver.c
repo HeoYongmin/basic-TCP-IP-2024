@@ -15,7 +15,7 @@ const char webpage[] = "HTTP/1.1 200 OK\r\n"
 "<!DOCTYPE html>\r\n"
 "<html><head><title> My Web Page </title>\r\n"
 "<style>body {background-color: #FFFF00 }</style></head>\r\n"
-"<body><center><h1>Hello world!!</h1><br>\r\n"
+"<body><center><h1>Who will win the championship??</h1><br>\r\n"
 "<img src=\"game.jpg\"></center></body></html>\r\n";
 
 void* handle_client(void* client_socket) {
@@ -29,6 +29,13 @@ void* handle_client(void* client_socket) {
         printf("Received: %s\n", buffer);
 
         if (strstr(buffer, "GET /game.jpg") != NULL) {
+            struct stat st;
+            if (stat("game.jpg", &st) != 0) {
+                perror("Failed to get file status");
+                close(sock);
+                return NULL;
+            }
+            int file_size = st.st_size;
             FILE* image_file = fopen("game.jpg", "rb");
             if (image_file == NULL) {
                 perror("Failed to open image file");
@@ -36,9 +43,6 @@ void* handle_client(void* client_socket) {
                 return NULL;
             }
 
-            struct stat st;
-            stat("game.jpg", &st);
-            int file_size = st.st_size;
             char header[BUFFER_SIZE];
             snprintf(header, sizeof(header),
                 "HTTP/1.1 200 OK\r\n"
